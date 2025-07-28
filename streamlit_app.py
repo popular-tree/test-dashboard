@@ -353,7 +353,7 @@ else:
             else:
                 st.write(f'내 답 : {answer["user_answer"]}')
                 if isinstance(answer['correct_answer'], list):
-                    st.write(f'정답 : {', '.join(answer["correct_answer"])}')
+                    st.write(f'정답 : {", ".join(answer["correct_answer"])}')
                 else:
                     st.write(f'정답 : {answer["correct_answer"]}')
 
