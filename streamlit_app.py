@@ -115,7 +115,7 @@ if not st.session_state.quiz_started:
     st.subheader('❓문제 미리보기')
 
     for i, q in enumerate(quiz_questions):
-        st.write(f'**문제{i+1}** : {q["question"]} ({q['type']}유형)')
+        st.write(f'**문제{i+1}** : {q["question"]} ({q["type"]}유형)')
 
 elif st.session_state.quiz_started and not st.session_state.quiz_finished:
     current_q=st.session_state.current_question
