@@ -344,7 +344,7 @@ else:
     st.subheader('상세 결과')
 
     for i, answer in enumerate(st.session_state.answers):
-        with st.expander(f'문제{i+1} : {'⭕'if answer["is_correct"] else '❌'}'):
+        with st.expander(f'문제{i+1} : {"⭕"if answer["is_correct"] else "❌"}'):
             st.write(f'{answer["question"]}')
 
             if isinstance(answer['user_answer'], int) and 'options' in quiz_questions[i]:
